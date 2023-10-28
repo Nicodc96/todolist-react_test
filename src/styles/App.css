@@ -1,0 +1,31 @@
+body{
+  background-color: rgb(36, 36, 36);
+}
+
+#mainComponentes{
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 25px 1px;
+}
+
+.formularioTareas{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.formTarea{
+  display: flex;
+  gap: 15px;
+}
+
+.tarea{
+  display: flex;
+  justify-content: space-around;
+}
