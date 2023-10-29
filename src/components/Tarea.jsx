@@ -5,6 +5,7 @@ export const Tarea = ({contenido, eliminarTarea, saveCheckStatus}) => {
             <p>{contenido.descripcion}</p>
             <button 
             type="button"
+            className="btnTarea"
             onClick={() => { eliminarTarea(contenido.id) }}>Eliminar</button>
         </div>
     )

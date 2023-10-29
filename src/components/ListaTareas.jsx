@@ -21,8 +21,7 @@ export const ListaTareas = () => {
     }
 
     const saveCheckStatus = (checked, id) => {
-        const tempArray = [...tareas];
-        tempArray.forEach(tarea => {
+        tareas.forEach(tarea => {
             if (tarea.id === id) tarea.checkStatus = checked;
         });
         localStorage.setItem("tareas", JSON.stringify(tareas));
