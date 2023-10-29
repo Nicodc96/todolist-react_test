@@ -1,9 +1,11 @@
-export const Tarea = ({contenido}) => {
+export const Tarea = ({contenido, eliminarTarea, saveCheckStatus}) => {
     return (
         <div className="tarea">
-            <p>Estado check: {contenido.checkStatus ? "True" : "False"}</p>
+            <input type='checkbox' defaultChecked={contenido.checkStatus} onChange={(e) => { saveCheckStatus(Boolean(e.target.checked), contenido.id)}}/>
             <p>{contenido.descripcion}</p>
-            <button type="button">Eliminar</button>
+            <button 
+            type="button"
+            onClick={() => { eliminarTarea(contenido.id) }}>Eliminar</button>
         </div>
     )
 }
